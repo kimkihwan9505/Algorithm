@@ -1,0 +1,17 @@
+import sys
+input= sys.stdin.readline
+
+a,b = map(int,input().split())
+c = list(map(int,input().split()))      
+temp = 0
+temp_sum = [0] 
+for i in c:
+    temp+=i
+    temp_sum.append(temp)      
+
+for _ in range(b):
+    d,f = map(int,input().split())
+    print(temp_sum[f]-temp_sum[d-1])
+
+
+// 부분합 
